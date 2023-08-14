@@ -5,7 +5,7 @@ h1 {
     text-align: center;
 }
 
-ul {
+.menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -13,16 +13,16 @@ ul {
     background-color: #CDC2AE;
   }
   
-  li {
+  #pages {
     float: left;
   }
   
-  li a {
+  #display {
     display: block;
     color: #116A7B;
     padding: 8px;
   }
-  li a:hover:not(.active) {
+  #display:hover:not(.active) {
     background-color: #C2DEDC;
   }
 
