@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Courses Page</title>
+    </head>
+  <body>
+    <a href="/SEIV/SE42023/careers.html">CAREERS</a>
+    <h1>Courses Computer Scientists may take in College</h1>
+
+    <ul class="list">
+        <li><button class="accordion">Programming I</button>
+            <div class="panel">
+            <p class="description">An introduction to the discipline of computing. The
+                course has three major objectives: to present computing as a discipline, to develop skills in
+                problem solving using a computer and to teach the software development process.</p></div>
+            </div></li>
+        <li>Programming II</li>
+        <li>Software Engineering</li>
+        <li>CS Electives</li>
+    </ul>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+  </body>
+</html>
