@@ -12,6 +12,10 @@ h1 {
     overflow: hidden;
     background-color: #CDC2AE;
   }
+.prepareUl {
+  list-style-type: square;
+  background-color: #CDC2AE;
+}
   
   #pages {
     float: left;
@@ -29,4 +33,13 @@ h1 {
 .computer-science{
     display: block;
     margin:  auto;
+ }
+
+ button.prepare{
+  background-color: #116A7B;
+  border: none;
+  transition-duration: 0.4s;
+}
+ button.prepare:hover{
+  background-color: #C2DEDC;
  }

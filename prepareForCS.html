@@ -4,18 +4,75 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <ul class="menu">
+            <li id="pages"> <a href="" id="display">Career</a> </li>
+            <li id="pages"> <a href="/Webpages/JSSite/family.html" id="display">Study</a></li>
+            <li id="pages"> <a href="/Webpages/JSSite/ASL.html" id="display">Student Life</a></li>
+            <li id="pages"> <a href="/Webpages/JSSite/cyberpatriot.html" id="display">Preparation</a></li>
+            <li id="pages"> <a href="/Webpages/JSSite/music.html" id="display">Why?</a></li>
+            <li id="pages"> <a href="" id="display">Course Work</a></li>
+            <li id="pages"> <a href="" id="display">Resources</a></li>
+            <li id="pages"> <a href="" id="display">Resume</a></li>
+            <li id="pages"> <a href="" id="display">Learn More</a></li>
+           
+        </ul>
         <h1>How to Prepare for Computer Science</h1>
         <dl>
-            <dt> Get familar with computers </dt>
+            <dt> <h2>Get familar with computers</h2> </dt>
             <dd>- Use computers as much as posible</dd>
+                <div id = useComputers style="padding-left: 50px;">    
+                <p>
+                    Getting familar with computers will help you in multiple ways during your computer science degree. Computer science at its very 
+                    core is using computers. So, getting the basics, like typing, understanding how to navigate diffrent operating systems, and useful 
+                    shortcuts down will be a great start to computer science
+                </p>
+                </div>
             <dd>- Take computer classes </dd>
             <dd>- </dd>
-            <dt> Learn about code</dt>
-            <dd>- Take online courses: 
+            <dt> <h2>Learn about code</h2></dt>
+            <dd><button onclick="action1()" class = prepare>- Take online courses:</button>
+                <div id = onlineCourses> 
                 <ul>
-                    <li><a href="https://www.w3schools.com/">w3schools.com</a> </dd></li>
-                    <li></li>
+                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                    <li><a href="https://www.codecademy.com/">Code Academy</a></li>
                 </ul>
-        </dl>
+                </div>
+            </dd>
+            <dd> <button onclick="action2()" class = prepare>- Other online resources:</button>
+                <div id = onlineResources>
+                    <ul>
+                        <li><a href="https://www.youtube.com/">Youtube</a></li>
+                        <li><a href="https://stackoverflow.com">Stack Overflow</a></li> 
+                    </ul>
+                </div>
+            </dd>
+                <dt><h2>Learn how to study</h2></dt>
+                    <dd> - Learn to manage your time</dd>
+                    <dd> - Learn to take notes
+                        <ul>
+                            <li>Find a system that works for you, paper or electronic</li>
+                            <li>Practice!</li>
+                        </ul>
+                    </dd>
+            </dl>
     </body> 
-</html>
+    
+    <script>
+        function action1(){
+            var x = document.getElementById("onlineCourses")
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function action2(){
+            var x = document.getElementById("onlineResources")
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        
+    </script>
