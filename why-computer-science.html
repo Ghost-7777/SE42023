@@ -2,18 +2,54 @@
 <html>
     <head>
         <link rel="stylesheet"  href="style.css" >
-        <title>Student Life</title>
+        <title>Why computer Scientist</title>
     </head>
     <body>
 
         <h1>Why become a Computer Scientist?</h1>
-
-
+       <p style="text-align: center;"> There are many reasons of why you should become a Computer Scientist. Here are some of the reasons that one should become a Computer Scientist. </p>
+ 
+        <ol>
+            <li>There are many jobs.</li>
+                <ol><li>There will always be a job out there for you.</li></ol>
+            <li>Salary</li>
+            <ol><li>Computer Scientists make good money.</li></ol>
+            <li>fun & Challenging</li>
+                <ol><li>It can be fun and challenging for people because you get to solve complex problems and this can be challenging<br> but you get to have the satisfication when you figure out the problem and have fun while doing it.</li></ol>
+            <li>Specialization</li>
+            <ol><li>One can have a specfic area they can study in computer science. <br>One can Specialize in doing Cyber Security, software engineer, game design and etc. There is many differnet areas you can study in with computer science. </li></ol>
+            <li>Technolgy is all around us.</li>
+            <ol><li>We use technology with almost everything with education, health, banking, retail stores, etc.<br>
+            Thus, you could learn about computer science and be one who handles the technology or be imrpoving and maintaining it. </li></ol>
+        </ol>
+        <p style="text-indent: 30px;"> Here is a link of more reasons why you should study in computer science.  </p>
+       <div style="text-indent: 30px;"><a href="https://www.indeed.com/career-advice/finding-a-job/pros-cons-of-being-computer-scientist">Pros in Computer Science</a></div> 
+        <form>
+            <p>Click button below to move the image to right</p>
+            <input type="button" value="Click Me" onclick="moveRight();" /><br>
+            <img id="computer-science" src="img/computer-scientist.jpg"  width="460" height="345">
+          
+        </form>
         
+      
+
+<script>
+    var imgObj = null;
     
-
-
-
+    function init(){
+        imgObj = document.getElementById('computer-science');
+		imgObj.style.position= 'relative';
+		imgObj.style.left = '0px';
+    }  
+		            
+    function moveRight(){
+        imgObj.style.left = parseInt(imgObj.style.left) + 1000 + 'px';
+    
+    }
+	
+    window.onload =init;
+   
+</script>
 
 
 </body>
