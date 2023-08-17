@@ -67,5 +67,33 @@
     </tr>
     </table>
 
+    <p>Click on the job title to learn more information about the job. There is a question that will be asked at the bottom of the page.</p>
+
+    <div class="center">
+    
+      <p id="guessPoem">Which job title is similar to a DevOps Engineer? </p>
+      
+      <input id="answer">
+      <button type="button" onclick="guess()">Submit</button>
+      </div>
+      
+      <p id="demo"></p>
+      
+      <script>
+          function guess() {
+              let x = document.getElementById("answer").value;
+              let text;
+      
+              if(x != "Software Developers") {
+                  text = "Try again";
+              }
+              else {
+                  text = "Correct!";
+              }
+             
+              document.getElementById("demo").innerHTML = text;
+          }
+      </script>
+
   </body>
 </html>
