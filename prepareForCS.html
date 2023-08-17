@@ -4,18 +4,116 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <ul class="menu">
+            <li id="pages"> <a href="career.html" id="display">Career</a> </li>
+            <li id="pages"> <a href="study.html" id="display">Study</a></li>
+            <li id="pages"> <a href="student-life.html" id="display">Student Life</a></li>
+            <li id="pages"> <a href="prepareForCS.html" id="display">Preparation</a></li>
+            <li id="pages"> <a href="why-computer-science.html">Why?</a></li>
+            <li id="pages"> <a href="courseWork.html" id="display">Course Work</a></li>
+            <li id="pages"> <a href="resources.html" id="display">Resources</a></li>
+            <li id="pages"> <a href="resume.html" id="display">Resume</a></li>
+            <li id="pages"> <a href="learnMore.html" id="display">Learn More</a></li>
+           
+        </ul>
         <h1>How to Prepare for Computer Science</h1>
+        <img class="computer-science" src="img\prepare.jpg"  width="460" height="345" > 
         <dl>
-            <dt> Get familar with computers </dt>
-            <dd>- Use computers as much as posible</dd>
-            <dd>- Take computer classes </dd>
-            <dd>- </dd>
-            <dt> Learn about code</dt>
-            <dd>- Take online courses: 
-                <ul>
-                    <li><a href="https://www.w3schools.com/">w3schools.com</a> </dd></li>
-                    <li></li>
-                </ul>
+            <dt> <h2>Get familar with computers</h2> </dt>
+                <dd><button onclick="action1()" class = prepare><h3>- Use computers as much as posible </h3></button></dd>
+                    <div class = internalPrepare id = useComputers >    
+                        <p>
+                            Getting familiar with computers will help you in multiple ways during your computer science degree. Computer science at its very core is using computers. So, getting the basics, like typing, understanding how to navigate different operating systems, and useful shortcuts down will be a great start to your journey in computer science.
+                        </p>
+                    </div>
+                <dd><button onclick="action2()" class = prepare><h3>- Take computer classes </h3></button></dd>
+                    <div class = internalPrepare id = takeClasses>
+                        <p>
+                            Taking computer classes is another great way to familiarize yourself with proper computer usage. This would be a benefical step for any potential computer science student. Local comunity colleges often offer these types of classes.
+                        </p>
+                    </div>
+        
+            <dt> <h2>Learn about code</h2></dt>
+                <dd><button onclick="action3()" class = prepare><h3>- Take online courses:</h3></button>
+                    <div class = internalPrepare id = onlineCourses> 
+                    <ul>
+                        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                        <li><a href="https://www.codecademy.com/">Code Academy</a></li>
+                    </ul>
+                    </div>
+                </dd>
+                <dd> <button onclick="action4()" class = prepare><h3>- Other online resources:</h3></button>
+                    <div class = internalPrepare id = onlineResources>
+                        <ul>
+                            <li><a href="https://www.youtube.com/">Youtube</a></li>
+                            <li><a href="https://stackoverflow.com">Stack Overflow</a></li> 
+                        </ul>
+                    </div>
+                </dd>
+                    <dt><h2>Learn how to study</h2></dt>
+                        <dd><button onclick="action5()" class = prepare><h3>Learn to manage your time</h3> </button></dd>
+                        <div class = internalPrepare id = study>
+                            <p>Finding a way to make an efficient use of your time is important to succeed in not just computer science but in any area of study</p>
+                        </div>
+                        <dd><button onclick="action6()" class = prepare><h3>Learn to take notes</h3></button></dd>
+                            <div class = internalPrepare id = notes>
+                            <ul>
+                                <li>Find a system that works for you, paper or electronic</li>
+                                <li>Practice!</li> 
+                            </ul>
+                            </div>
+                        
         </dl>
     </body> 
-</html>
+    
+    <script>
+        function action1(){
+            var x = document.getElementById("useComputers")
+            if (x.style.display === "none"|| x.style.display === "") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function action2(){
+            var x = document.getElementById("takeClasses")
+            if (x.style.display === "none" || x.style.display === "") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function action3(){
+            var x = document.getElementById("onlineCourses")
+            if (x.style.display === "none"|| x.style.display === "") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function action4(){
+            var x = document.getElementById("onlineResources")
+            if (x.style.display === "none"|| x.style.display === "") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function action5(){
+            var x = document.getElementById("study")
+            if (x.style.display === "none"|| x.style.display === "") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function action6(){
+            var x = document.getElementById("notes")
+            if (x.style.display === "none"|| x.style.display === "") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        
+    </script>
