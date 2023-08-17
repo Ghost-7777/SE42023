@@ -38,8 +38,15 @@ h1 {
  button.prepare{
   background-color: #116A7B;
   border: none;
+  padding-bottom: 0px;
   transition-duration: 0.4s;
 }
  button.prepare:hover{
   background-color: #C2DEDC;
  }
+
+ .internalPrepare{
+  padding-left: 100px;
+  overflow:hidden;
+  display:none;  
+ } 
