@@ -8,11 +8,51 @@
 
         <h1>Student Life</h1>
 
-    
+<table>
+    <tr>  
+         <td> <img  src="img/student-life.JPG"  width="460" height="345" id="student-life"></td>
+         <td> <img  src="img/study.jpg"  width="460" height="320" id="study"></td>
+        <td> <img  src="img/students2.jpg"  width="560" height="345" id="social-life"></td>
+       
+    </tr>
+    <tr>
+        <td><button onclick="Life()"> Student Life</button></td>
+        <td><button onclick="Study()"> Study</button></td>
+        <td><button onclick="Social()"> Social Life</button></td>
+    </tr>
+        <tr>
+            <td> <p id="box"> A computer science student will be learning and culivating skills <br>that will help them get jobs that deal with technology-focused careers.<br>
+                Some of the skills they may learn is <br>programming languages, data science,
+                 software development, information security, and network architecture.</p>
+            </td>
+            <td><p id="box">As a student you would be going to your classes. If there are classes with lab then you would 
+                also go to lab. As well you can talk with your professor and ask for help on any of your assignments.</p></td>
 
+          <td> <p id="box"> Students also can have thier own time. They may want some quiet time or they can join any 
+            activities their school may provide. Although it is good to have a social life, one should finish thier work before 
+            they can go and have free time.</p></td>
+             
+        </tr>
 
+</table>
 
+    <p>Here is a video of a student's life as a computer science major.</p>
+    <div><a href="https://www.youtube.com/watch?v=fHvf7J6xuH0">Life as a Computer Science Major</a></div>
+<script>
+     function Life() {
+            document.getElementById('student-life').src="img/life-as-cs.jpg";
+        }
+        
+        function Study() {
+            document.getElementById('study').src="img/study2.jpg";
 
+        }
+       
+        function Social(){
+             document.getElementById('social-life').src="img/student.jpg" ;
+        }
+        
+</script>
 
 </body>
 </html>
