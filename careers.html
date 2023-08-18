@@ -7,19 +7,95 @@
   <body>
 
     <ul class="menu">
-      <li id="pages"> <a href="/SEIV/SE42023/home.html" id="display">Home</a></li>
-      <li id="pages"> <a href="/SEIV/SE42023/courses.html" id="display">Course Work</a> </li>
-      <li id="pages"> <a href="/SEIV/SE42023/" id="display">Study</a></li>
-      <li id="pages"> <a href="/SEIV/SE42023/student-life.html" id="display">Student Life</a></li>
-      <li id="pages"> <a href="/SEIV/SE42023/prepareForCS.html" id="display">Preparation</a></li>
-      <li id="pages"> <a href="/SEIV/SE42023/why-computer-science.html" id="display">Why?</a></li>
-      <li id="pages"> <a href="/SEIV/SE42023/" id="display">Resources</a></li>
-      <li id="pages"> <a href="/SEIV/SE42023/" id="display">Resume</a></li>
-      <li id="pages"> <a href="/SEIV/SE42023/learnMore.html" id="display">Learn More</a></li>
+              <li id="pages"> <a href="home.html"  id="display">Home</a></li>
+                <li id="pages"> <a href="EmphasisCS.html"  id="display">Emphasis</a></li>
+                <li id="pages"> <a href="student-life.html" id="display">Student Life</a></li>
+                <li id="pages"> <a href="prepareForCS.html"  id="display">Preparation</a></li>
+                <li id="pages"> <a href="why-computer-science.html"  id="display">Why?</a></li>
+                <li id="pages"> <a href="courses.html" >Course Work</a></li>
+                <li id="pages"> <a href="ResourcesCS.html"  id="display">Resources</a></li>
+                <li id="pages"> <a href="resume.html"  id="display">Resume</a></li>
+                <li id="pages"> <a href="learnMore.html"  id="display">Learn More</a></li>
      
   </ul>
-    <h1>Careers in Computer Science</h1>
+    <br><br>
+    <img class="imgClasses" src="img/career.jpg" width="600" height="400">
+    <br>
+    <h3>Top 10 Jobs for Computer Science Majors</h3>
+    <table id="jobs">
+    <tr class="titles">
+      <th>Jobs</th>
+      <th>Annual Salary</th>
+    </tr>
+    <tr class="titles">
+      <td><a href="https://bigfuture.collegeboard.org/careers/computer-and-information-systems-manager" style ="color: black">Computer and Information System Manager</a></td>
+      <td>$157,884</td>
+    </tr>
+    <tr class="titles">
+      <td><a href="https://bigfuture.collegeboard.org/careers/information-security-analyst" style ="color: black">Information Security Analysts</a></td>
+      <td>$102,443</td>
+    </tr>
+    <tr class="titles">
+      <td><a href="https://bigfuture.collegeboard.org/careers/computer-or-information-research-scientist" style ="color: black">Computer and Information Research Scientists</a></td>
+      <td>$131,498</td>
+    </tr>
+    <tr class="titles">
+      <td><a href="https://bigfuture.collegeboard.org/careers/computer-network-support-specialist" style ="color: black">Computer Network Support Specialists</a></td>
+      <td>$62,808</td>
+    </tr>
+    <tr class="titles">
+      <td><a href="https://bigfuture.collegeboard.org/careers/database-architect" style ="color: black">Database Architects</a></td>
+      <td>$122,729</td>
+    </tr>
+    <tr class="titles">
+      <td><a href="https://bigfuture.collegeboard.org/careers/computer-programmer" style ="color: black">Computer Programmers</a></td>
+      <td>$89,631</td>
+    </tr>
+    <tr class="titles">
+      <td><a href="https://bigfuture.collegeboard.org/careers/software-developer" style ="color: black">Software Developers</a></td>
+      <td>$119,996</td>
+    </tr>
+    <tr class="titles">
+      <td><a href="https://bigfuture.collegeboard.org/careers/software-quality-assurance-analyst-or-tester" style ="color: black">Software Quality Assurance Analysts and Testers</a></td>
+      <td>$98,104</td>
+    </tr>
+    <tr class="titles">
+      <td><a href="https://bigfuture.collegeboard.org/careers/web-developer" style ="color: black">Web Developers</a></td>
+      <td>$70,978</td>
+    </tr>
+    <tr class="titles">
+      <td><a href="https://bigfuture.collegeboard.org/careers/web-and-digital-interface-designer" style ="color: black">Web and Digital Interface Designers</a></td>
+      <td>$73,426</td>
+    </tr>
+    </table>
 
+    <p>Click on the job title to learn more information about the job. There is a question that will be asked at the bottom of the page.</p>
+
+    <div class="center">
     
+      <p id="guessPoem">Which job title is similar to a DevOps Engineer? </p>
+      
+      <input id="answer">
+      <button type="button" onclick="guess()">Submit</button>
+      </div>
+      
+      <p id="demo"></p>
+      
+      <script>
+          function guess() {
+              let x = document.getElementById("answer").value;
+              let text;
+      
+              if(x != "Software Developers") {
+                  text = "Try again";
+              }
+              else {
+                  text = "Correct!";
+              }
+             
+              document.getElementById("demo").innerHTML = text;
+          }
+      </script>
+
   </body>
 </html>

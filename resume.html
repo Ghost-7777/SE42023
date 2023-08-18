@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Resume Page</title>
+    </head>
+  <body>
+
+    <ul class="menu">
+              <li id="pages"> <a href="home.html"  id="display">Home</a></li>
+              <li id="pages"> <a href="careers.html" id="display">Career</a> </li>
+                <li id="pages"> <a href="EmphasisCS.html"  id="display">Emphasis</a></li>
+                <li id="pages"> <a href="student-life.html" id="display">Student Life</a></li>
+                <li id="pages"> <a href="prepareForCS.html"  id="display">Preparation</a></li>
+                <li id="pages"> <a href="why-computer-science.html"  id="display">Why?</a></li>
+                <li id="pages"> <a href="courses.html" >Course Work</a></li>
+                <li id="pages"> <a href="ResourcesCS.html"  id="display">Resources</a></li>
+                <li id="pages"> <a href="learnMore.html"  id="display">Learn More</a></li>
+     
+  </ul>
+    <br><br>
+
+    <h1>Tips to write a Computer Science Resume</h1>
+    
+    <ol>
+        <li>Personal Information - Name and contact information.</li>
+        <li>Education - Name of the University and your major.</li>
+        <li>Work Experience - If you do not have much work experience yet, you can include projects that you have worked on.</li>
+        <li>Skills - This may include technical tools you know how to use.</li>
+        <li>Achievements/Certifications</li>
+    </ol>
+
+    <br>
+    <p>Here is a link for more information on what to include in your resume:  <a href="https://www.indeed.com/career-advice/resumes-cover-letters/resume-computer-science" style ="color: black">Resume Advice</a></p> 
+    
+    <p>Click on the button to view an example of a resume.</p>
+    
+    <button onclick="myFunction()">Click here!</button>
+
+    <img hidden id="imgResume" src="img/resume.png">
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("imgResume");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+  }
+}
+    </script>
+
+  </body>
+</html>
