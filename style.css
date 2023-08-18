@@ -116,14 +116,14 @@ h5 {
   }
 
 
- table {
+ #jobs {
     border-collapse: collapse;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
  }
 
- td, th {
+ .titles {
     border: 5px solid #116A7B;
     text-align: left;
     padding: 8px;
