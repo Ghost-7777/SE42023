@@ -60,7 +60,8 @@ h5 {
   transition-duration: 0.4s;
 }
  button.prepare:hover{
-  background-color: #C2DEDC;
+  background-color: #116A7B;
+  cursor: pointer;
  }
 
  .internalPrepare{
