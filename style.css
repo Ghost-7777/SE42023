@@ -6,6 +6,11 @@ h1 {
     text-align: center;
 }
 
+
+h5 {
+    text-align: center;
+}
+
 .menu {
     list-style-type: none;
     margin: 0;
@@ -26,15 +31,64 @@ h1 {
   #display:hover:not(.active) {
     background-color: #ECE5C7;
   }
-
-  .computer-science{
-    display: block;
-    margin:auto;
-  }
-
   #box{
     width: 450px;
     border: 5px solid #116A7B;
     padding: 10px;
   }
+
+.computer-science{
+    display: block;
+    margin:  auto;
+ }
+
+.imgClasses {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accordion {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 150px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+
+  .panel {
+    padding: 2 20px;
+    display: none;
+    overflow: hidden;
+  }
+
+  .description {
+    width: 600px;
+    background-color: white;
+    border-radius: 3% / 70%;
+    padding-left: 30px;
+  }
+
  
+
+
